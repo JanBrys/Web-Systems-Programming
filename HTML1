@@ -1,0 +1,35 @@
+Tekst:
+[OK] Nagłówki
+[OK] Akapity
+[OK] Wytłuszczenia
+[OK] Znaki specjalne                                                        //póki co dodano tylko znak nowej linii
+[OK] Modyfikacja położenia względem linii bazowej
+
+Grafika:
+[OK] Umieszczanie na stronie w naturalnych rozmariach i zmodyfikowanych     //nie dodałem w naturalnych rozmiarach
+[OK] każda grafika powinna posiadać tekst alternatywny (alt)
+
+Listy (wypunktowania)
+[OK] Numerowane i nienumerowane
+[OK] Zagnieżdżanie list
+
+Tabele:
+[OK] Wiersze nagłówkowe
+[OK] Różne formatowania
+[] Zagnieżdzanie
+[OK] Łączenie kolumn i wierszy
+
+Odnośniki (linki):
+[OK] Do innej strony
+[] Do etykiety
+[] Umożliwiające pobranie pliku (przez http i ftp), pliki powinny znajdować się w różnych lokalizacjach
+[OK] Wysłanie poczty
+[OK] Uaktywniane kliknięciem w obrazek
+
+Formularz:
+[OK] Kilka pól tekstowych (input type= "text")
+[OK] Rozwijaną listę z pogrupowanymi opcjami
+[OK] Grupę elementów jednokrotnego wyboru (radio)
+[OK] Grupę elementów wielokrotnego wyboru (checkbox)
+[OK] Pole tekstowe na wpisanie maskymalnie 200 znaków (text area)
+[OK] Przyciski czyszczenia i wysłania formularza

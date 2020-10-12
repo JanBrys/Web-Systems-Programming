@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="kup,bilet,formularz,Cinema,Village">
+    <meta name="description" content="Cinema Village - formularz zakupu biletu">
+
+    <title>Cinema Village - najlepsze i najnowsze premiery</title>
+</head>
+<body>
+<div style="background-color: lightgray;width: 400px;height: 500px">
+    <h1 align="center">Formularz kupna biletu</h1>
+    <form>
+        <label>Imię <input type="text"/><br></label>
+        <label>Nazwisko <input type="text"/><br></label>
+
+        <label>
+            <p>Sala:</p>
+            <input type="radio" name="sala" /><b>Sala nr.1</b><br>
+            <input type="radio" name="sala" /><b>Sala nr.2</b><br>
+            <input type="radio" name="sala" /><b>Sala nr.3</b><br>
+        </label><br>
+        <label>
+            Film:
+            <select>
+                <optgroup label="Akcji">
+                    <option>Mroczny Rycerz</option>
+                    <option>Avengers: Wojna bez granic</option>
+                </optgroup>
+                <optgroup label="Komedia">
+                    <option>Forrest Gump</option>
+                    <option>Nietykalni</option>
+                </optgroup>
+            </select>
+        </label><br><br><br>
+
+        <label>
+            Dodatki:<br>
+            Popcorn <input type="checkbox" value="Popcorn"/>
+            Cola <input type="checkbox" value="Cola"/>
+            Nachos <input type="checkbox" value="Nachos"/>
+        </label><br><br>
+
+        <label>
+            <textarea rows="3" cols="20" maxlength="200"></textarea>
+        </label><br><br>
+        <input type="reset" value="Wyczyść formularz" /><br>
+        <input type="submit" value="Wyślij" />
+    </form>
+
+    <p>W razie problemów <a href="mailto:janbrys1@gmail.com">Wyślij nam e-mail!</a></p>
+</div>
+
+</body>
+</html>
