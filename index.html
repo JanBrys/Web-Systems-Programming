@@ -6,6 +6,19 @@
     <meta name="description" content="Sprzedaż biletów na najnowsze premiery filmowe">
 
     <title>Cinema Village - najlepsze i najnowsze premiery</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+
+    </style>
 </head>
 <body>
 <h1 align="center">Cinema Village</h1>
@@ -13,23 +26,93 @@
     <p>Dowiedz się czegoś o nas!</p>
 </a>
 <a href="cinemaHall1.html">
-    <p>Sprawdź dostępność w sali nr.1!</p>
+    <p>Sprawdź dostępność w sali nr. 1!</p>
 </a>
 <a href="buyForm.html">
     <p>Kup bilet!</p>
 </a>
+<a href="#informations">Przejdź do informacji o kontakcie</a>
+<br>
+<br>
+<br>
+
 <div id="price_list">
-    <p>Cennik biletów:</p>
-    <ul>
-        <li>W dni robocze: <b>22 zł</b></li>
-        <li>Seans weekendowy: <b>25 zł</b></li>
-        <li>Ulgowe:
-            <ol>
-                <li> Studencki: <b>20 zł </b></li>
-                <li>Dla osób starszych: <b>15 zł</b></li>
-            </ol>
-        </li>
-    </ul>
+    <table>
+      <tr>
+        <th style="height: 50px;text-align: center" COLSPAN="6">Cennik biletów</th>
+      </tr>
+      <tr>
+        <td> pon-pt </td>
+        <td>
+          <table>
+            <tr>
+              <td> normalny </td>
+              <td> 22 zł </td>
+            </tr>
+            <tr>
+              <td> ulgowy </td>
+              <td> 15 zł </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr> <td> sobota </td>
+      <td>
+        <table>
+          <tr>
+            <td> normalny </td>
+            <td> 25 zł </td>
+          </tr>
+          <tr>
+            <td> dla osób starszych </td>
+            <td> 20 zł </td>
+          </tr>
+          <tr>
+            <td> studencki </td>
+            <td> 18 zł </td>
+          </tr>
+          <tr>
+            <td> rodzinny </td>
+            <td> 45 zł </td>
+          </tr>
+        </table>
+      </td> </tr>
+      <tr> <td> niedziela </td>
+      <td>
+        <table>
+          <tr>
+            <td> normalny </td>
+            <td> 24 zł </td>
+          </tr>
+          <tr>
+            <td> dla osób starszych </td>
+            <td> 18 zł </td>
+          </tr>
+          <tr>
+            <td> studencki </td>
+            <td> 16 zł </td>
+          </tr>
+        </table>
+      </td> </tr>
+    </table>
+    <p><a href="http-download/PLACEHOLDER_http.pdf" download="CENNIK.pdf">Pobierz cennik w formacie PDF</a></p>
+    <p><a href=ftp://user_name:password@ftp-download/PLACEHOLDER.pdf/>Pobierz cennik (FTP)</a></p>
+</div>
+
+<br>
+<br>
+<br>
+<div id="informations">
+  <p> Kontakt: </p>
+  <ul>
+    <li> Adres: ul. Wrocławska 21, Wrocławska </li>
+    <li> Telefon: 12345678 </li>
+    <li> Jesteśmy dostępni na: </li>
+    <ol>
+      <li> <a href="https://www.facebook.com/cinema">Facebooku</a> </li>
+      <li> <a href="https://www.youtube.com/cinema"> YouTube<a></li>
+    </ol>
+  </ul>
 </div>
 
 <h5 align="right">Jan Bryś & Tomasz Jasiński</h5>

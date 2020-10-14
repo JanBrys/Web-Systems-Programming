@@ -16,13 +16,13 @@ Listy (wypunktowania)
 Tabele:
 [OK] Wiersze nagłówkowe
 [OK] Różne formatowania
-[] Zagnieżdzanie
+[OK] Zagnieżdzanie
 [OK] Łączenie kolumn i wierszy
 
 Odnośniki (linki):
 [OK] Do innej strony
-[] Do etykiety
-[] Umożliwiające pobranie pliku (przez http i ftp), pliki powinny znajdować się w różnych lokalizacjach
+[OK] Do etykiety
+[] Umożliwiające pobranie pliku (przez http i ftp), pliki powinny znajdować się w różnych lokalizacjach //HTTP jest, FTP nie działa?
 [OK] Wysłanie poczty
 [OK] Uaktywniane kliknięciem w obrazek
 
