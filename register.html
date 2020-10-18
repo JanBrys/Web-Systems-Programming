@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="rejestracja,konto,Cinema,Village">
+    <meta name="description" content="Organizacja imprezy w Cinema Village">
+    <title>Rejestracja widza</title>
+</head>
+<body>
+<a href="index.html">Strona główna</a> | <a href="register-more.html">Rejestracja - więcej</a>
+<div style="background-color: lightgray;width: 800px;height: 300px">
+    <h1 align="center">Formularz rejestracyjny</h1>
+    <form>
+        <label>Imię <input type="text" value="" autofocus pattern="[A-Z]{1}+[a-z]{1,}" autocomplete="on"/></label> <small>(imię powinno zawierać przynajmniej dwie litery)</small>
+        <br>
+        <label>Nazwisko <input type="text" value="" required pattern="[A-Z]{1}+[a-z]{1,}" autocomplete="on"/></label> <small>(nazwisko powinno zawierać przynajmniej dwie litery)</small>
+        <br>
+        <label>Dzień urodzin <input type="number" name="day" placeholder="Dzień urodzin" min="1" max="31" /> </label> <small>(dzień urodzin to liczba między 1 a 31)</small>
+        <br>
+        <label for="month-choice">Miesiąc urodzin</label>
+        <input list="months" id="month-choice" name="month-choice" />
+
+        <datalist id="months">
+            <option value="Styczeń">
+            <option value="Luty">
+            <option value="Marzec">
+            <option value="Kwiecień">
+            <option value="Maj">
+            <option value="Czerwiec">
+            <option value="Lipiec">
+            <option value="Sierpień">
+            <option value="Wrzesień">
+            <option value="Październik">
+            <option value="Listopad">
+            <option value="Grudzień">
+        </datalist> <small>(proszę wybrać z listy)</small>
+
+        <br>
+        <label>Rok urodzin <input type="number" name="year" placeholder="Rok urodzin" min="1800" max="2020" /> </label> <small>(rok urodzin to liczba nie większa niż 2020)</small>
+        <br>
+        <!--nie sprawdza poprawności dat; do dat można użyć: <input type="date" name="dzień urodzin" min="1890-01-01" max="1999-12-31"-->
+        <label for="email" >Adres email</label>
+        <input type="email" id="email" name="email" required autocomplete="on"> <small>(adres e-mail powinien zawierać znak @ oraz kończyć się adresem domeny skrzynki)</small>
+        <br>
+        <label for="phone">Numer telefonu:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" autocomplete="on"> <small>(numer telefonu powinien zawierać 9 cyfr)</small>
+        <br><br>
+        <input type="reset" value="Wyczyść formularz" /> <input type="submit" value="Wyślij" />
+
+    </form>
+
+    <p>W razie problemów <a href="mailto:janbrys1@gmail.com">wyślij nam e-mail!</a></p>
+</div>
+<footer>
+    <h5 align="right">Jan Bryś & Tomasz Jasiński</h5>
+</footer>
+</body>
+</html>

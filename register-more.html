@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="prośby,filmy,Cinema,Village">
+    <meta name="description" content="Organizacja imprezy w Cinema Village">
+    <title>Zasugeruj nam pokaz filmu</title>
+</head>
+<body>
+<a href="index.html">Strona główna</a>
+<div style="background-color: lightgray;width: 800px;height: 300px">
+    <h1 align="center">Zorganizuj u nas własną imprezę - rejestracja</h1>
+    <form>
+      <label> Wpisz tytuł filmu, którego pokaz powinniśmy urządzić w naszym kinie <input type="text" placeholder="Tytuł filmu"> </label>
+        <br>
+        <label for="favcolor">Wybierz kolor balonów:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <br>
+        <label for="start">Wybierz termin organizacji imprezy:</label>
+
+        <input type="month" id="start" name="start" min="2018-03" value="2018-05">
+       <br>
+       <p>Liczba uczestników imprezy:</p>
+        <div id="participants">
+          <input type="range" id="volume" name="participants" min="0" max="10" value="10" step="1">
+          <label for="volume">Liczba gości</label>
+        </div>
+        <br>
+        <label for="site-search">Wyszukaj na stronie:</label>
+        <input type="search" id="site-search" name="q" aria-label="Wyszukaj na stronie" placeholder="Wyszukaj...">
+        <button>Wyszukaj</button>
+        <br>
+        <label for="url">Wprowadź adres URL swojej domeny:</label>
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30">
+        <br>
+        <input type="reset" value="Wyczyść formularz" /> <input type="submit" value="Wyślij" />
+
+    </form>
+
+    <p>W razie problemów <a href="mailto:janbrys1@gmail.com">wyślij nam e-mail!</a></p>
+</div>
+<footer>
+    <h5 align="right">Jan Bryś & Tomasz Jasiński</h5>
+</footer>
+</body>
+</html>

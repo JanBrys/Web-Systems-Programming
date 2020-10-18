@@ -12,7 +12,18 @@
 [OK] Footer
 
 3. Formularz osobowy
-[]
+[OK] Info format //formatowanie daty?
+[OK] autocomplete //czy działa?
+[OK] walidacja maila
+[OK] walidacja telefonu (pattern)
+[OK] imię (autofocus)
+[OK] required
+
 
 4. Formularz opisujacy dodatkowe informacje o uzytkowniku
-[]
+[OK] placeholder (szaro)
+[OK] color
+[OK] month
+[OK] range
+[OK] search
+[OK] url
