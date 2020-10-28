@@ -5,69 +5,65 @@
     <meta name="keywords" content="sala,miejsca,wolne,zajete,Cinema,Village">
     <meta name="description" content="Rozłożenie miejsc w sali nr 1">
     <title>Cinema Village - Sala nr.1</title>
-    <style>
-        table{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        tr{
-            border: 1px solid black;
-        }
-        td{
-            border: 1px solid black;
-        }
+    <link media="only screen and (max-width: 3000px)" rel="stylesheet" href="CSS/main.css">
 
+    <style>
+        #fixing_seat {
+            background-color: blue;
+            color: white;
+        }
     </style>
+
 </head>
-<body>
-<a href="index.html">Strona główna</a>
+<body id="background_color">
+    <a href="index.html">Strona główna</a>
     <h1 align="center">SALA NR 1</h1>
-        <table align = center style="width: 400px; height: 200px; text-align: center">
+        <table class="hall">
             <tr>
                 <th style="height: 50px;text-align: center" COLSPAN="6">EKRAN</th>
             </tr>
             <tr>
                 <td style="width: 20px" rowspan="6">Schody</td>
-                <td bgcolor="green">1</td>
-                <td bgcolor="green">2</td>
-                <td bgcolor="#dc143c">3</td>
-                <td bgcolor="green">4</td>
-                <td bgcolor="green">5</td>
+                <td class="empty_seat">1</td>
+                <td class="empty_seat">2</td>
+                <td class="unavailable_seat">3</td>
+                <td class="empty_seat">4</td>
+                <td class="empty_seat">5</td>
             </tr>
             <tr>
-                <td bgcolor="green">6</td>
-                <td bgcolor="#dc143c">7</td>
-                <td bgcolor="green">8</td>
-                <td bgcolor="#dc143c">9</td>
-                <td bgcolor="#dc143c">10</td>
+                <td class="empty_seat">6</td>
+                <td class="unavailable_seat">7</td>
+                <td class="empty_seat">8</td>
+                <td class="unavailable_seat">9</td>
+                <td class="unavailable_seat">10</td>
             </tr>
             <tr>
-                <td bgcolor="green">11</td>
-                <td bgcolor="#dc143c">12</td>
-                <td bgcolor="green">13</td>
-                <td bgcolor="#dc143c">14</td>
-                <td bgcolor="green">15</td>
+                <td class="empty_seat">11</td>
+                <td class="unavailable_seat">12</td>
+                <td class="empty_seat">13</td>
+                <td class="unavailable_seat">14</td>
+                <td class="empty_seat">15</td>
             </tr>
             <tr>
-                <td bgcolor="#dc143c">16</td>
-                <td bgcolor="#dc143c">17</td>
-                <td bgcolor="#dc143c">18</td>
-                <td bgcolor="#dc143c">19</td>
-                <td bgcolor="green">20</td>
+                <td class="unavailable_seat">16</td>
+                <td class="unavailable_seat">17</td>
+                <td class="unavailable_seat">18</td>
+                <td class="unavailable_seat">19</td>
+                <td class="empty_seat">20</td>
             </tr>
             <tr>
-                <td bgcolor="green">21</td>
-                <td bgcolor="#dc143c">22</td>
-                <td bgcolor="#dc143c">23</td>
-                <td bgcolor="#dc143c">24</td>
-                <td bgcolor="green">25</td>
+                <td class="empty_seat">21</td>
+                <td class="unavailable_seat">22</td>
+                <td class="unavailable_seat">23</td>
+                <td class="unavailable_seat">24</td>
+                <td class="empty_seat">25</td>
             </tr>
             <tr>
-                <td bgcolor="#dc143c">26</td>
-                <td bgcolor="#dc143c">27</td>
-                <td bgcolor="green">28</td>
-                <td bgcolor="#dc143c">29</td>
-                <td bgcolor="#dc143c">30</td>
+                <td class="unavailable_seat">26</td>
+                <td class="unavailable_seat">27</td>
+                <td id="fixing_seat" class="empty_seat" style="color: aqua">28</td>
+                <td class="unavailable_seat">29</td>
+                <td class="unavailable_seat">30</td>
             </tr>
         </table>
     <div style="background-color: lightgray; width:100px; height: 100px; margin: auto ;border: 1px solid black;">
@@ -77,10 +73,10 @@
     </div>
 
     <div align="center">
-        <p>Liczba <mark>zapełnionych</mark> miejsc:</p>
+        <a href="#seats">Liczba zapełnionych miejsc:</a>
+        <br>
         <meter id="sala" value="13" min="0" max="30">13 out of 30</meter>
     </div>
-
 
     <footer>
         <h5 align="right">Jan Bryś & Tomasz Jasiński</h5>
