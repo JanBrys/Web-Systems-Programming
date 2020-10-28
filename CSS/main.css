@@ -69,10 +69,19 @@ h2
     font-style: oblique;
 }
 
+p
+{
+  font-size: 1em;
+  line-height: 2em;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
 
 footer[class="authors"]
 {
-    font-size: 30px;
+    font-size: 20pt;
+
 }
 
 a:active
@@ -155,4 +164,54 @@ input:required[type="text"]
 a:visited
 {
     color: deeppink;
+}
+
+#about_us
+{
+  font-size: 20px;
+
+}
+
+#location
+{
+  font-size: 150%;
+  padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 80px;
+
+}
+
+#discount, #history
+{
+position: static;
+  padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 80px;
+width: 50%;
+float: clear;
+}
+
+#main_link
+{
+  position: fixed;
+  bottom: 75%;
+
+}
+#extra-info
+{
+  left: 35%;
+  position: absolute;
+}
+#quote
+{
+  position: relative;
+  top: 50%;
+  right: 15%;
+}
+
+#legend
+{
+  float: left;
 }
