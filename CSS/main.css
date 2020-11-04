@@ -1,7 +1,63 @@
 @font-face {
-    font-family: "SyneMono";
-    src: url("/fonts/SyneMono-Regular.ttf");
+    font-family: 'SyneMono';
+    src: url('../fonts/SyneMono-Regular') format('truetype');
 }
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 40px;
+}
+.flex-container > div {
+  background-color: yellow;
+  margin: 20px;
+  padding: 40px;
+}
+
+h1
+{
+    font-family: 'SyneMono';
+    text-shadow: 3px -3px grey;
+}
+h2
+{
+
+    width: 300px;
+    border-radius: 10px;
+    background-color: hsla(240, 50%, 70%, 0.9);
+}
+#history, #quote, #location, #discount {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+img {
+  transition: width 1s, height 2s;
+  transform:rotate(12deg);
+}
+img:hover {
+  width: 400px;
+  height: 400px;
+  transform: skewY(10deg);
+  opacity: 0.5;
+}
+
+
+
+
 table.hall{
     border-width: 3px;
     border-style: dotted;
@@ -37,16 +93,11 @@ td{
   text-align: center;
 }
 
-h1{
-    font-family: SyneMono;
-    text-shadow: 3px -3px grey;
-}
-h2
-{
-    
-    width: 300px;
-    border-radius: 10px;
-    background-color: hsla(240, 50%, 70%, 0.9);
+#about {
+ background-image: url("../images/backgrounds/bl-01.jpg");
+ background-position: left;
+ background-repeat: repeat-x;
+ background-origin: content-box;
 }
 
 #contact_info
@@ -54,7 +105,17 @@ h2
     background-color: rgba(0,255,55,0.5);
     width: 320px;
     border-radius: 30px 10px;
+    box-shadow: 4px 15px #888888;
 }
+
+@media only screen and (min-width: 1200px) {
+  #opinions {
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 5px double #3510aa;
+  }
+}
+
 
 #background_hall1
 {
@@ -64,5 +125,12 @@ h2
 {
     background: radial-gradient(circle at center,grey,white);
 }
-
-
+#background_buy{
+  background-image: url("../images/backgrounds/bl-02.jpg");
+  background-position: right;
+  background-repeat: repeat-y;
+  background-origin: padding-box;
+}
+#location{
+  border-image-source: url("../images/border-images/matrix.png");
+}
