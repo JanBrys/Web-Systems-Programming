@@ -4,7 +4,7 @@
 [OK] działanie właściwości box-shadow //dla contact_info
 [OK] gradienty liniowe i radialne // linear- tło dla cinemaHall1.html // radial - tło dla index.html
 [OK] background-image / background-position / background-origin / background-repeat
-[] kilka obrazkowych obwodek przy pomocy wlasciwosci : border-image-source / border-image-slice / border-image-repeat ??????????
+[OK] kilka obrazkowych obwodek przy pomocy wlasciwosci : border-image-source / border-image-slice / border-image-repeat
 [OK] wlasciwosci animacji z wykorzystaniem animation i reguly @keyframes wraz z jej selektorami
 [OK] transition i transform - elementy mozna przesuwac obracac i przekrzywiac. zjawisko przenikania obrazow
 [] wykorzystac zewnetrzna czcionke; @font-face ??????

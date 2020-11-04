@@ -27,9 +27,42 @@ h2
     border-radius: 10px;
     background-color: hsla(240, 50%, 70%, 0.9);
 }
+
+p
+{
+  border: 20px;
+  padding: 20px;
+  margin: 10px;
+}
+
+#location
+{
+   border: 10px solid transparent;
+  border-image-source: url('../images/border/border.jpg');
+  border-image-slice: 10%;
+  border-image-repeat: stretch;
+}
+
+#discount
+{
+   border: 15px solid transparent;
+  border-image-source: url('../images/border/matrix.png');
+  border-image-slice: 25%;
+  border-image-repeat: repeat;
+}
+
+#div_buy_form
+{
+  border: 10px solid transparent;
+  border-image-source: url('../images/border/sun.jpg');
+  border-image-slice: 40%;
+  border-image-repeat: repeat;
+}
+
 #history, #quote, #location, #discount {
   animation-duration: 1s;
   animation-name: slidein;
+  margin-bottom: 20px;
 }
 
 @keyframes slidein {
@@ -48,13 +81,13 @@ img {
   transition: width 1s, height 2s;
   transform:rotate(12deg);
 }
+
 img:hover {
   width: 400px;
   height: 400px;
   transform: skewY(10deg);
   opacity: 0.5;
 }
-
 
 
 
@@ -130,7 +163,4 @@ td{
   background-position: right;
   background-repeat: repeat-y;
   background-origin: padding-box;
-}
-#location{
-  border-image-source: url("../images/border-images/matrix.png");
 }
