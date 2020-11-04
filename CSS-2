@@ -7,7 +7,7 @@
 [OK] kilka obrazkowych obwodek przy pomocy wlasciwosci : border-image-source / border-image-slice / border-image-repeat
 [OK] wlasciwosci animacji z wykorzystaniem animation i reguly @keyframes wraz z jej selektorami
 [OK] transition i transform - elementy mozna przesuwac obracac i przekrzywiac. zjawisko przenikania obrazow
-[] wykorzystac zewnetrzna czcionke; @font-face ??????
+[OK] wykorzystac zewnetrzna czcionke; @font-face
 [OK] wykorzystac Flexible Box Layout Module
 [OK] publikowanie wielokolumnowe (na sztywno) właściwości: column-count, column-gap, column-rule //opinions
 [OK] reguła @media l. kolumn uzależnić od rozdzielczości ekranu urządzenia
