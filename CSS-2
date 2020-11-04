@@ -1,0 +1,11 @@
+[OK] Zastouj właściwość text-shadow // dla h1
+[OK] dla bloku div pokaz mozliwosci border-radius //index.html dla kontaktu (grey background)
+[OK] mozliwosc manipulowania kolorem przy pomocy modeli RGBA i HSLA // dla h2 i tez dla kontaktu (rgb - info kontaktowe hsla - naglowek np. "kontakt")
+[] wlasciwosci box-shadow
+[OK] gradienty liniowe i radialne // linear- tło dla cinemaHall1.html // radial - tło dla index.html
+[] background -image / background-position / background-origin / background-repeat
+[] kilka obrazkowych obwodek przy pomocy wlasciwosci : border-image-source / border-image-slice / border-image-repeat
+[] wlasciwosci animacji z wykorzystaniem animation i reguly @keyframes wraz z jej selektorami
+[] transition i transform - elementy mozna przesuwac obracac i przekrzywiac. zjawisko przenikania obrazow
+[] wykorzystac zewnetrzna czcionke (np. z http://www.google.com/fonts/). uzyc reguly font-face
+wykorzystac Flexible Box Layout Module
