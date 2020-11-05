@@ -1,11 +1,16 @@
+
 @font-face {
     font-family: 'SyneMono';
     src: url('../fonts/SyneMono-Regular.ttf') format('truetype');
 }
 
 .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 20px;
   padding: 40px;
 }
@@ -62,9 +67,23 @@ p
 }
 
 #history, #quote, #location, #discount {
-  animation-duration: 1s;
-  animation-name: slidein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
   margin-bottom: 20px;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 @keyframes slidein {
@@ -80,14 +99,20 @@ p
 }
 
 img {
+  -webkit-transition: width 1s, height 2s;
+  -o-transition: width 1s, height 2s;
   transition: width 1s, height 2s;
-  transform:rotate(12deg);
+  -webkit-transform:rotate(12deg);
+      -ms-transform:rotate(12deg);
+          transform:rotate(12deg);
 }
 
 img:hover {
   width: 400px;
   height: 400px;
-  transform: skewY(10deg);
+  -webkit-transform: skewY(10deg);
+      -ms-transform: skewY(10deg);
+          transform: skewY(10deg);
   opacity: 0.5;
 }
 
@@ -140,24 +165,34 @@ td{
     background-color: rgba(0,255,55,0.5);
     width: 320px;
     border-radius: 30px 10px;
-    box-shadow: 4px 15px #888888;
+    -webkit-box-shadow: 4px 15px #888888;
+            box-shadow: 4px 15px #888888;
 }
 
 @media only screen and (min-width: 1200px) {
   #opinions {
-    column-count: 2;
-    column-gap: 40px;
-    column-rule: 5px double #3510aa;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    -webkit-column-rule: 5px double #3510aa;
+       -moz-column-rule: 5px double #3510aa;
+            column-rule: 5px double #3510aa;
   }
 }
 
 
 #background_hall1
 {
+    background:  -webkit-linear-gradient(linear, left top, right top, from(grey),to(#f7e9f6));
+    background:  -o-linear-gradient(left, grey,#f7e9f6);
     background:  linear-gradient(to right, grey,#f7e9f6)
 }
 #background_index
 {
+    background: -o-radial-gradient(center,circle,grey,white);
     background: radial-gradient(circle at center,grey,white);
 }
 #background_buy{
