@@ -1,0 +1,14 @@
+[] 5 własnych funkcji. wspoldzielone funkcje w osobnym pliku .js
+[] document.writeln()
+[] document.getElementById()
+[] window.prompt()
+[] window.alert()
+[] window.addEventListener()
+[] button.addEventListener()
+[] właściwość innerHTML
+[] parseInt()
+[] parseFloat()
+[] Math.random
+[] Math.floor
+[] if..else,case,while,do...while,for
+[] zmienne globalne
