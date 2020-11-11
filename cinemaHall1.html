@@ -6,6 +6,7 @@
     <meta name="description" content="Rozłożenie miejsc w sali nr 1">
     <title>Cinema Village - Sala nr.1</title>
     <link media="only screen and (max-width: 3000px)" rel="stylesheet" href="CSS/main.css">
+    <script src="JS/script.js"></script>
 
     <style>
         #fixing_seat {
@@ -15,7 +16,10 @@
     </style>
 
 </head>
-<body id="background_hall1">
+<body id="background_hall1" onload="writeLn()">
+<div id="lucky_number" onclick="rollLuckyNumber()">
+    <p>znajdz swoją szczęśliwą liczbę!</p>
+</div>
     <a href="index.html" id="main_link">Strona główna</a>
     <h1 id="hall_title">SALA NR 1</h1>
         <table class="hall">

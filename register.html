@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="rejestracja,konto,Cinema,Village">
     <meta name="description" content="Organizacja imprezy w Cinema Village">
+    <script src="JS/script.js"></script>
     <title>Rejestracja widza</title>
     <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body id="register">
+<div id="lucky_number" onclick="rollLuckyNumber()">
+    <p>znajdz swoją szczęśliwą liczbę!</p>
+</div>
+
+<div id="average" onmouseover="showAvarageNumber()" onmouseleave="makePrevious()">
+    <p>Najedz,aby zobaczyć srednia wylosowanych liczb </p>
+</div>
+
 <a href="index.html">Strona główna</a> | <a href="register-more.html">Rejestracja - więcej</a>
 <div class="regist-more">
     <h1 id="form_title">Formularz rejestracyjny</h1>
