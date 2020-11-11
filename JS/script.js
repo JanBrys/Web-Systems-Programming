@@ -24,3 +24,7 @@ function showAvarageNumber()
         average_div.innerHTML ="  <p>Najedz,aby zobaczyć srednia wylosowanych liczb: " + sum/average + "</p>"
     }
 }
+function showLegend() {
+window.alert("Kolor zielony - miejsce wolne; kolor czerwony - miejsce zajęte");
+}
+document.addEventListener('legend-btn', sayHello);

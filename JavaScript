@@ -4,7 +4,7 @@
 [OK] window.prompt()
 [OK] window.alert()
 [OK] window.addEventListener() // trashcan.html
-[] button.addEventListener()
+[OK] button.addEventListener()
 [OK] właściwość innerHTML
 [OK] parseInt()
 [OK] parseFloat()
