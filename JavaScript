@@ -3,12 +3,12 @@
 [OK] document.getElementById()
 [OK] window.prompt()
 [OK] window.alert()
-[] window.addEventListener()
+[OK] window.addEventListener() // trashcan.html
 [] button.addEventListener()
 [OK] właściwość innerHTML
 [OK] parseInt()
 [OK] parseFloat()
 [OK] Math.random
 [OK] Math.floor
-[OK] if..else,case,while,do...while,for // bez for
+[OK] if..else,case,while,do...while,for
 [OK] zmienne globalne
