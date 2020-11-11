@@ -16,18 +16,26 @@
         }
         function fillTextArea()
         {
-            do {
+
                 number = window.prompt("Podaj, ile biletów chciałbyś/chciałabyś kupić");
                 var text_area = document.getElementById("text_area");
-            }while(!parseFloat(number));
-            if(Number.isInteger(parseFloat(number)))
+
+            if(Number.isInteger(parseFloat(number)) && parseFloat(number)>0)
             {
-                text_area.value = "Chciałbym/Chciałabym kupić " + (parseFloat(number)+1) + " biletów";
+                text_area.value = "Chciałbym/Chciałabym kupić " + (parseFloat(number)) + " biletów";
             }
-            else
+            else if (parseFloat(number)<0)
             {
                 text_area.value = "Chciałbym/Chciałabym kupić chyba " + parseFloat(number) + " biletów... Czekaj, CO!?";
-                text_area.value += "\nA może bym chciał/chciała jednak kupić " + parseInt(number) + " biletów?";
+                text_area.value += "\nA może bym chciał/chciała jednak kupić " + -(parseInt(number)) + " biletów?";
+            }
+            else if(parseFloat(number) == 0) {
+              text_area.value = "Chciałbym/Chciałabym kupić chyba " + parseFloat(number) + " biletów... Czekaj, CO!?";
+              text_area.value += "\nA może bym chciał/chciała jednak kupić " + 1 + " bilet?";
+            }
+            else {
+              text_area.value = "Chciałbym/Chciałabym kupić chyba " + parseFloat(number) + " biletów... Czekaj, CO!?";
+              text_area.value += "\nA może bym chciał/chciała jednak kupić " + 1 + " bilet?";
             }
         }
 

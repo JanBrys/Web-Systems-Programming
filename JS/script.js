@@ -10,21 +10,17 @@ function rollLuckyNumber()
     }
     average++;
     sum +=number;
-    lucky_number.innerHTML = "<p>Twoja szczesliwa liczba to: " + number + "</p>";
+    lucky_number.innerHTML = "Twoja szczesliwa liczba to: " + number ;
 }
 function showAvarageNumber()
 {
     var average_div = document.getElementById("average");
     if(sum===0 && average===0)
     {
-        average_div.innerHTML = "  <p>Najedz,aby zobaczyć srednia wylosowanych liczb: "+ 0 + "</p>"
+        average_div.innerHTML = "Najedz,aby zobaczyć srednia wylosowanych liczb: "+ 0;
     }
     else
     {
-        average_div.innerHTML ="  <p>Najedz,aby zobaczyć srednia wylosowanych liczb: " + sum/average + "</p>"
+        average_div.innerHTML ="Najedz, by zobaczyć srednia wylosowanych liczb: " + sum/average;
     }
 }
-function showLegend() {
-window.alert("Kolor zielony - miejsce wolne; kolor czerwony - miejsce zajęte");
-}
-document.addEventListener('legend-btn', sayHello);
