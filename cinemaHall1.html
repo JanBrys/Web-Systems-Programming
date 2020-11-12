@@ -7,12 +7,6 @@
     <title>Cinema Village - Sala nr.1</title>
     <link media="only screen and (max-width: 3000px)" rel="stylesheet" href="CSS/main.css">
     <script src="JS/script.js"></script>
-    <script>
-    function showLegend() {
-      window.alert("Kolor zielony - miejsce wolne\nczerwony - miejsce zajęte");
-    }
-    </script>
-
 
     <style>
         #fixing_seat {
@@ -77,8 +71,12 @@
             </tr>
         </table>
     <div id="legend" style="background-color: lightgray; width:200px; height: 50px; margin: auto ;border: 1px solid black;">
-      <button class="legend-btn" onclick="showLegend()">Zobacz legendę</button>
-
+      <button id="myBTN">Zobacz legendę</button>
+      <script>
+      document.getElementById("myBTN").addEventListener("click", function() {
+        window.alert("Kolor zielony - miejsce wolne\nczerwony - miejsce zajęte");
+      });
+      </script>
     </div>
 
     <div id="seats">
