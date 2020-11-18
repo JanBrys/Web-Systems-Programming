@@ -7,7 +7,8 @@
     <script src="JS/script.js"></script>
     <title>Cinema Village - o nas</title>
     <link rel="stylesheet" href="CSS/main.css">
-    
+    <script src="JS/dom.js"></script>
+
 </head>
 <body id="about">
 <div id="lucky_number" onclick="rollLuckyNumber()">
@@ -16,25 +17,26 @@
 <div id="average" onmouseover="showAvarageNumber()" onmouseleave="makePrevious()">
     <p>Najedz,aby zobaczyć srednia wylosowanych liczb </p>
 </div>
-    <a href="index.html">Strona główna</a>
+    <a name="Strona główna" href="index.html">Strona główna</a>
     <div id="about_us">
         <h1 id="titleV">Cinema Village</h1>
-        <p id="welcome">Witajcie w informacjach o naszym kinie!<br> Znajdziecie Państwo u nas <b>najnowsze premiery kinowe</b>, które aktualnie elektryzują świat kinematografii.<br></p>
+        <p id="welcome" onmousedown="mouseDown()" onmouseout="mouseOut()">Witajcie w informacjach o naszym kinie!<br> Znajdziecie Państwo u nas <b>najnowsze premiery kinowe</b>, które aktualnie elektryzują świat kinematografii.<br></p>
         <ul>
-        <li><a href="#posters">Informacje o filmach</a></li>
-        <li><a href="#history">Informacje o historii kina</a></li>
-        <li><a href="#discount">Przejdź do informacji o zniżkach</a></li>
+        <li><a name="Info o filmach" href="#posters">Informacje o filmach</a></li>
+        <li><a name="historia" href="#history">Informacje o historii kina</a></li>
+        <li><a name="znizka" href="#discount">Przejdź do informacji o zniżkach</a></li>
       </ul>
     </div>
 
     <div id="posters">
-      <h2>Przykłady filmów, które puszczaliśmy na premierę:</h2>
-        <a href="https://www.filmweb.pl/film/Pulp+Fiction-1994-1039">
+      <h2 id="samples" onmouseover="mouseOver()" onmouseout="mouseOut()">Przykłady filmów, które puszczaliśmy na premierę:</h2>
+        <a name="poster1" href="https://www.filmweb.pl/film/Pulp+Fiction-1994-1039">
             <img src="images/posters/pulp-fiction.jpg" alt="Pulp Fiction Poster" width="300" height="400">
         </a>
-        <a href="https://www.filmweb.pl/film/L%C5%9Bnienie-1980-1020">
+        <a name="poster2" href="https://www.filmweb.pl/film/L%C5%9Bnienie-1980-1020">
         <img src="images/posters/the-shining.jpg" alt="The Shining Poster" width="300" height="400">
         </a>
+        <button onclick="borderFirst()">Premiera</button>
     </div>
 
     <div id="history">
@@ -48,7 +50,7 @@
 
     </div>
 
-    <div id="discount">
+    <div id="discount" onclick="showCoords(event)" onmousemove="onMouseMoving(event)" onmouseout="clearCoor()"><p id="demo"></p><p id="demo1"></p>
       <h2>Zniżki</h2>
             <p>W wybrane dni oferujemy zniżki. Osoby starsze <mark>przy okazaniu</mark> legitymacji seniora, studenci <mark>przy okazaniu</mark> legitymacji studenckiej. Bilety rodzinne oferujemy dla grup złożonych z dwóch dorosłych i dwóch dzieci.</p>
         <details>
@@ -59,9 +61,15 @@
     <div id="location">
         <article>
             <h2>Położenie kina</h2>
-            <p>Kino mieści się na ulicy Piaskowej 42.</p>
+            <ul id="adres-kina"><li>Kino mieści się na ulicy Piaskowej 42.</li><li>Zapraszamy serdecznie do kontaktu pod numerem 1234556!</li></ul>
+            <button onclick="showAddress()">Pokaż szczegóły</button>
+            <button onclick="hideDetails()">Ukryj szczegóły</button>
         </article>
     </div>
+
+    <button onclick="anchorsNumber()">Liczba linków na stronie</button>
+    <p id="demo"></p>
+
 
     <footer class="authors">
         <h5>Jan Bryś & Tomasz Jasiński</h5>

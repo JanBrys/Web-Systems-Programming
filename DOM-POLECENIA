@@ -2,37 +2,40 @@
 [OK] CreateTextNode
 [OK] appendChild
 [OK] insertBefore
+[OK] replaceChild,
+[OK] removeChild
+[OK] właściwości parentNode //przy seats, tylko zamykanie licznika
 
 kolekcje:
-[] images
-[] links
-[] forms
-[] anchors
-[] item
-[] namedItem
+[OK] images //about obramowanie
+[OK] links //seats
+[OK] forms //register
+[OK] anchors //about
+[OK] item  //tam gdzie replaceChild
+[OK] namedItem //tytuł register
 
 [OK] zmiana stylu css na żądanie  - kolor tła, tekstu, rodzaju czcionki (z listy)
 
 właściwości dla obiektu event:
-[] altKey
-[] ctrlKey
-[] shiftKey
+[OK] altKey
+[OK] ctrlKey
+[OK] shiftKey //opinie
 [] keyCode
-[] clientX
-[] clientY
-[] screenX
-[] screenY
-    zdarzenia:
-[] mousemove
-[] mousedown
-[] mouseover
-[] mouseout
+[OK] clientX
+[OK] clientY
+[OK] screenX
+[OK] screenY //znizki
 
-dla formularzu:
+    zdarzenia:
+[OK] mousemove //znizki
+[OK] mousedown
+[OK] mouseover
+[OK] mouseout
+
+dla formularza:
     do wyswietlania tesktu:
-[]focus
+[] focus
 []blur
     do wyzwalania okien potwierdzajacych:
 []submit
 []reset
-

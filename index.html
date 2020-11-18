@@ -5,26 +5,7 @@
     <meta name="keywords" content="kino,bilet,kup,sala,film,najnowsze,filmy,premiery,premiera">
     <meta name="description" content="Sprzedaż biletów na najnowsze premiery filmowe">
     <script src="JS/dom.js"></script>
-    <script>
-      function showGuestName() {
 
-        var guest = document.getElementById("guest");
-        var name = window.prompt("Witaj! jak masz na imię?");
-        switch (name)
-        {
-          case "Jan":
-            guest.innerHTML = "<h2>Witaj Panie Janie!</h2>";
-            break;
-          case "Tomasz":
-            guest.innerHTML = "<h2>Witaj szefie Tomaszu!</h2>";
-            break;
-          default:
-            guest.innerHTML = "<h2>Witaj " + name + "!</h2>";
-            break;
-        }
-      }
-
-    </script>
     <title >Cinema Village - najlepsze i najnowsze premiery</title>
     <style>
         table{
@@ -48,6 +29,8 @@
 <h1 id="index_title" align="center" >Cinema village</h1>
 
 <div id="dom_task1" onclick="dodajLiczbe()"></div>
+
+
 
 <div id="change_style">
   Zmień styl:
@@ -202,7 +185,7 @@
 <br>
 
 
-<section id="opinions">
+<section id="opinions" onmousedown="isKeyPressed(event)">
   <h2>Opinie o naszym kinie</h2>
   <article id="most_rated_opinion">
     <h3>Najwyżej oceniona opinia:</h3>
@@ -214,12 +197,13 @@
       <p>Fajna obsługa, małe sale, większa immersja ~ Adam</p>
   </section>
 </section>
-<p></p>
+
+
 <section id="informations">
   <h2> Kontakt: </h2>
-  <div id="contact_info" >
+  <div id="contact_info">
     <ul>
-      <li> Adres: ul. Wrocławska 21, Wrocławska </li>
+      <li> Adres: ul. Wrocławska 21</li>
       <li> Telefon: 12345678 </li>
       <li> Jesteśmy dostępni na:
         <ol>

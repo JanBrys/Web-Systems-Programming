@@ -7,6 +7,8 @@
     <script src="JS/script.js"></script>
     <title>Rejestracja widza</title>
     <link rel="stylesheet" href="CSS/main.css">
+    <script src="JS/dom.js"></script>
+
 </head>
 <body id="register">
 <div id="lucky_number" onclick="rollLuckyNumber()">
@@ -19,9 +21,9 @@
 
 <a href="index.html">Strona główna</a> | <a href="register-more.html">Rejestracja - więcej</a>
 <div class="regist-more">
-    <h1 id="form_title">Formularz rejestracyjny</h1>
+    <h1 id="form_title" onclick="change_title()">Formularz rejestracyjny</h1>
     <form>
-        <label>Imię <input type="text" value="" autofocus pattern="[A-Z]{1}+[a-z]{1,}" autocomplete="on"/></label> <small>(imię powinno zawierać przynajmniej dwie litery)</small>
+        <label id="imie-label">Imię <input type="text" value="" autofocus pattern="[A-Z]{1}+[a-z]{1,}" autocomplete="on"/></label> <small>(imię powinno zawierać przynajmniej dwie litery)</small>
         <br>
         <label>Nazwisko <input type="text" value="" required pattern="[A-Z]{1}+[a-z]{1,}" autocomplete="on"/></label> <small>(nazwisko powinno zawierać przynajmniej dwie litery)</small>
         <br>
@@ -58,6 +60,9 @@
         <input type="reset" value="Wyczyść formularz" /> <input type="submit" value="Wyślij" />
         <br>
     </form>
+    <button onclick="checkValues()">Sprawdź poprawność wpisanych pól</button>
+    <p id="demo"></p>
+
 
     <p>W razie problemów <a href="mailto:janbrys1@gmail.com">wyślij nam e-mail!</a></p>
 </div>

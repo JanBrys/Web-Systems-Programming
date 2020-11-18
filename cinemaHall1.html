@@ -7,6 +7,7 @@
     <title>Cinema Village - Sala nr.1</title>
     <link media="only screen and (max-width: 3000px)" rel="stylesheet" href="CSS/main.css">
     <script src="JS/script.js"></script>
+    <script src="JS/dom.js"></script>
 
     <style>
         #fixing_seat {
@@ -72,6 +73,7 @@
         </table>
     <div id="legend" style="background-color: lightgray; width:200px; height: 50px; margin: auto ;border: 1px solid black;">
       <button id="myBTN">Zobacz legendę</button>
+      <button onclick="markBack()">Znajdź powrót</button>
       <script>
       document.getElementById("myBTN").addEventListener("click", function() {
         window.alert("Kolor zielony - miejsce wolne\nczerwony - miejsce zajęte");
@@ -81,6 +83,7 @@
 
     <div id="seats">
         <a href="#seats">Liczba zapełnionych miejsc:</a>
+        <span onclick="this.parentNode.style.display = 'none';">x</span>
         <br>
         <meter id="sala" value="13" min="0" max="30">13 out of 30</meter>
     </div>

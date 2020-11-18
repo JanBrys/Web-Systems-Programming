@@ -149,6 +149,10 @@ td{
   text-align: center;
 }
 
+#seats:hover{
+  cursor: pointer;
+}
+
 #posters, #history, #quote, #location, #form_title, #discount {
   text-align: center;
 }
