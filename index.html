@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="kino,bilet,kup,sala,film,najnowsze,filmy,premiery,premiera">
     <meta name="description" content="Sprzedaż biletów na najnowsze premiery filmowe">
-    <script src="JS/script.js"></script>
+    <script src="JS/dom.js"></script>
     <script>
       function showGuestName() {
 
@@ -43,18 +43,59 @@
   <link rel="stylesheet" href="CSS/main.css">
 </head>
 
-<body id="background_index" onload="showGuestName()">
-<div id="guest"></div>
-
-<div id="lucky_number" onclick="rollLuckyNumber()">
-  <p>znajdz swoją szczęśliwą liczbę!</p>
-</div>
-
-<div id="average" onmouseover="showAvarageNumber()">
-  <p>Najedz,aby zobaczyć srednia wylosowanych liczb </p>
-</div>
+<body id="background_index" onload="foo()">
 
 <h1 id="index_title" align="center" >Cinema village</h1>
+
+<div id="dom_task1" onclick="dodajLiczbe()"></div>
+
+<div id="change_style">
+  Zmień styl:
+  <ul>
+    <li>Kolor tła:
+      <ol>
+        <li onclick="changeStyle(1)">
+          Czerwony
+        </li>
+        <li onclick="changeStyle(2)">
+          Niebieski
+        </li>
+        <li onclick="changeStyle(3)">
+          Zielony
+        </li>
+      </ol>
+    </li>
+    <li>Kolor tekstu:
+      <ol>
+        <li  onclick="changeStyle(4)">
+          Czerwony
+        </li>
+        <li  onclick="changeStyle(5)">
+          Niebieski
+        </li>
+        <li  onclick="changeStyle(6)">
+          Zielony
+        </li>
+      </ol>
+    </li>
+    <li>Rodzaj czcionki
+      <ol>
+        <li  onclick="changeStyle(7)">
+          Arial
+        </li>
+        <li  onclick="changeStyle(8)">
+          Monotype Corsiva
+        </li>
+        <li  onclick="changeStyle(9)">
+          Times New Roman
+        </li>
+      </ol>
+    </li>
+  </ul>
+
+</div>
+
+
 <div  class="flex-container">
 <section>
   <h2>Linki</h2>

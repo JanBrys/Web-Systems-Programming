@@ -1,0 +1,38 @@
+[OK] CreateElement
+[OK] CreateTextNode
+[OK] appendChild
+[OK] insertBefore
+
+kolekcje:
+[] images
+[] links
+[] forms
+[] anchors
+[] item
+[] namedItem
+
+[OK] zmiana stylu css na żądanie  - kolor tła, tekstu, rodzaju czcionki (z listy)
+
+właściwości dla obiektu event:
+[] altKey
+[] ctrlKey
+[] shiftKey
+[] keyCode
+[] clientX
+[] clientY
+[] screenX
+[] screenY
+    zdarzenia:
+[] mousemove
+[] mousedown
+[] mouseover
+[] mouseout
+
+dla formularzu:
+    do wyswietlania tesktu:
+[]focus
+[]blur
+    do wyzwalania okien potwierdzajacych:
+[]submit
+[]reset
+
