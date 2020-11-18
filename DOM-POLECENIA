@@ -20,7 +20,7 @@ właściwości dla obiektu event:
 [OK] altKey
 [OK] ctrlKey
 [OK] shiftKey //opinie
-[] keyCode
+[OK] keyCode
 [OK] clientX
 [OK] clientY
 [OK] screenX

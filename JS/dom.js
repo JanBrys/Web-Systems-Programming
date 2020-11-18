@@ -113,6 +113,9 @@ function isKeyPressed(event) {
   else if (event.shiftKey){
     alert("The SHIFT key was pressed!");
   }
+  else if (event.keyCode = 67) {
+    alert ("You pressed the C key!");
+  }
   else {
     alert("No key was pressed!");
   }
