@@ -37,5 +37,5 @@ dla formularza:
 [OK] focus
 [OK]blur
     do wyzwalania okien potwierdzajacych:
-[]submit
-[]reset
+[OK]submit
+[OK]reset
