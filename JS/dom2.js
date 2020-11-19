@@ -26,5 +26,5 @@ function anchorsNumber() {
 }
 
 function change_title(){
-  document.getElementsByTagName("h1")[0].innerHTML = "Zarejestruj się i odbierz nagrodę!";
+  document.getElementsByTagName("h1").namedItem("form_title").innerHTML = "Zarejestruj się i odbierz nagrodę!";
 }
