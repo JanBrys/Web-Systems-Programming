@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="kup,bilet,formularz,Cinema,Village">
     <meta name="description" content="Cinema Village - formularz zakupu biletu">
-    <script src="JS/script.js"></script>
     <title>Cinema Village - najlepsze i najnowsze premiery</title>
     <link rel="stylesheet" href="CSS/main.css">
 
@@ -56,9 +55,9 @@
 <a href="index.html">Strona główna</a>
 <div id="div_buy_form" style="background-color: lightgray;width: 400px;height: 550px">
     <h1 id="form_title">Formularz kupna biletu</h1>
-    <form onsubmit="alertForm()">
+    <form id="buy_form">
         <label>Imię <input type="text" value=""/><br></label>
-        <label>Nazwisko <input type="text" value=""/><br><br></label>
+        <label>Nazwisko <input id="nazwisko_id" type="text" value=""/><br><br></label>
 
         <label>
             Sala:
@@ -103,5 +102,8 @@
 <footer class="authors">
     <h5>Jan Bryś & Tomasz Jasiński</h5>
 </footer>
+
+<script src="JS/dom.js"></script>
 </body>
 </html>
+

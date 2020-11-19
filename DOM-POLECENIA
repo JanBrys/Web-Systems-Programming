@@ -34,8 +34,8 @@ właściwości dla obiektu event:
 
 dla formularza:
     do wyswietlania tesktu:
-[] focus
-[]blur
+[OK] focus
+[OK]blur
     do wyzwalania okien potwierdzajacych:
 []submit
 []reset
