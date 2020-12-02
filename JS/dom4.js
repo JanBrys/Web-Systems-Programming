@@ -7,7 +7,7 @@ function isKeyPressed(event) {
   else if (event.shiftKey){
     alert("The SHIFT key was pressed!");
   }
-  else if (event.keyCode = 67) {
+  else if (event.keyCode == 67) {
     alert ("You pressed the C key!");
   }
   else {
@@ -20,8 +20,8 @@ function showCoords(event) {
   var sX = event.screenX;
   var cY = event.clientY;
   var sY = event.screenY;
-  var coords1 = "client - X: " + cX + ", Y coords: " + cY;
-  var coords2 = "screen - X: " + sX + ", Y coords: " + sY;
+  var coords1 = "client - X: " + cX + ", Y: " + cY;
+  var coords2 = "screen - X: " + sX + ", Y: " + sY;
   document.getElementById("demo").innerHTML = coords1 + "<br>" + coords2;
 }
 function onMouseMoving(e) {
