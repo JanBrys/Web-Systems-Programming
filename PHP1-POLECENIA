@@ -1,0 +1,19 @@
+[OK] typowanie dynamiczne,
+[OK] konwersja typów,
+[OK] rzutowanie,
+[OK] stałe, //five days
+[OK] operatory arytmetyczne,
+[OK] operatory przypisania,
+[OK] operatory porównania,
+[OK] pierwszeństwo operatorów,
+[OK] tablice indeksowane numerycznie
+[OK] tablice asocjacyjne, //wiek osób? asocjację można za pomocą => jak w COOKIE
+[OK] instrukcje sterujące for i foreach
+[OK] funkcje count, reset, key, next,
+[OK] wyrażenia regularne, //form.php - telefon
+[OK] funkcje preg_match, //form.php - telefon
+[OK] preg_replace,
+[OK] porównywanie łańcuchów (operatory i funkcje),
+[OK] znaki specjalne w łańcuchach (rola odwrotnego ukośnika), \ (backlash)
+[OK] inne tablice superglobalne (np. ujawnianie w odpowiedzi serwera adresu IP klienta), //ciastka
+[OK] funkcja die //przerywa wykonywanie skryptu - form.php

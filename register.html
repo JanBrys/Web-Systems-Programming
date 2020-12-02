@@ -12,21 +12,15 @@
 
 </head>
 <body id="register">
-<div id="lucky_number" onclick="rollLuckyNumber()">
-    <p>znajdz swoją szczęśliwą liczbę!</p>
-</div>
 
-<div id="average" onmouseover="showAvarageNumber()" onmouseleave="makePrevious()">
-    <p>Najedz,aby zobaczyć srednia wylosowanych liczb </p>
-</div>
 
 <a href="index.html">Strona główna</a> | <a href="register-more.html">Rejestracja - więcej</a>
 <div class="regist-more">
     <h1 id="form_title" onclick="change_title()">Formularz rejestracyjny</h1>
-    <form>
-        <label id="imie-label">Imię <input type="text" value="" autofocus pattern="[A-Z]{1}+[a-z]{1,}" autocomplete="on"/></label> <small>(imię powinno zawierać przynajmniej dwie litery)</small>
+      <form method = "post" action = "form.php">
+        <label id="imie-label">Imię <input type="text" name="name" value="" autofocus pattern="[A-Z]{1}+[a-z]{1,}" autocomplete="on"/></label> <small>(imię powinno zawierać przynajmniej dwie litery)</small>
         <br>
-        <label>Nazwisko <input type="text" value="" required pattern="[A-Z]{1}+[a-z]{1,}" autocomplete="on"/></label> <small>(nazwisko powinno zawierać przynajmniej dwie litery)</small>
+        <label>Nazwisko <input type="text" value="" required pattern="[A-Z]{1}+[a-z]{1,}" autocomplete="on" name="surname"/></label> <small>(nazwisko powinno zawierać przynajmniej dwie litery)</small>
         <br>
         <label>Dzień urodzin <input type="number" name="day" placeholder="Dzień urodzin" min="1" max="31" /> </label> <small>(dzień urodzin to liczba między 1 a 31)</small>
         <br>
@@ -51,18 +45,16 @@
         <br>
         <label>Rok urodzin <input type="number" name="year" placeholder="Rok urodzin" min="1800" max="2020" /> </label> <small>(rok urodzin to liczba nie większa niż 2020)</small>
         <br>
-        <!--nie sprawdza poprawności dat; do dat można użyć: <input type="date" name="dzień urodzin" min="1890-01-01" max="1999-12-31"-->
         <label for="email" >Adres email</label>
         <input type="email" id="email" name="email" required autocomplete="on"> <small>(adres e-mail powinien zawierać znak @ oraz kończyć się adresem domeny skrzynki)</small>
         <br>
         <label for="phone">Numer telefonu:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" autocomplete="on"> <small>(numer telefonu powinien zawierać 9 cyfr)</small>
+        <input type="tel" id="phone" name="phone" autocomplete="on"> <small>(numer telefonu powinien zawierać 6 cyfr poprzedzonych trzema w nawiasach)</small>
         <br><br>
-        <input type="reset" value="Wyczyść formularz" /> <input type="submit" value="Wyślij" />
+        <input type="reset" value="Wyczyść formularz" />
+        <input type="submit" name="submit" value="Wyślij" />
         <br>
     </form>
-    <button onclick="checkValues()">Sprawdź poprawność wpisanych pól</button>
-    <p id="demo"></p>
 
 
     <p>W razie problemów <a href="mailto:janbrys1@gmail.com">wyślij nam e-mail!</a></p>
